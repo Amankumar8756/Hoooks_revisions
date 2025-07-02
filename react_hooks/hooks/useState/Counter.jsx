@@ -1,18 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Counter = () => {
 
-    let counter =0;
+   // let counter =0;
     
+    const [counter, setCoounter] = useState(0);
+
+    const [salary, setsalary] = useState(100000/10);
+
+    const [number, setnumber] = useState([10,20]);
+
     const increase = () =>{
-        counter++;
+
+        setCoounter(counter + 1);
+    
         console.log("counter increase = ",counter)
     }
 
     const decrease =()=>{
-        counter--;
+     
+           setCoounter(counter -1);
           console.log("counter decrease = ",counter)
     }
+
+    // const encom =() =>{
+    //   setsalary(salary + 100)
+    //   console.log("montholy salary is ",salary)
+    // }
 
   return (
     <div>
@@ -22,9 +36,12 @@ const Counter = () => {
 
          <button onClick={increase}>increase by 1</button>
 
-         <button onClick={decrease}>increase by 2</button>
+         <button onClick={decrease}>decrease by 1</button>
        </div>
-
+       <h2>Salary = {salary}</h2>
+       <button onClick={()=>setsalary(salary+100/10)}> salary </button>
+       
+        <p>here present your dayes -- {number}</p>
     </div>
   )
 }
