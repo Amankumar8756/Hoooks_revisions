@@ -6,3 +6,4 @@ const MyContext = createContext();
 
 export default MyContext;
 
+console.log("amna")
