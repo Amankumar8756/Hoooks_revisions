@@ -1,10 +1,20 @@
 import React from 'react'
-import Counter from '../hooks/useState/Counter'
+import IndianGov from '../hooks/useContext/propsdrilling/IndianGov'
+//import ChangeBg from '../hooks/useLayOutEffect/ChangeBg'
+// import Counter from '../hooks/useState/Counter'
+// import FetchData from '../hooks/useEffect/FetchData'
+// import NumCount from '../hooks/useEffect/NumCount'
+
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      {/* proposDrilling */}
+      <IndianGov />
+      {/* <ChangeBg /> */}
+      {/* <NumCount /> */}
+      {/* <FetchData /> */}
+      {/* <Counter /> */}
     </div>
   )
 }
