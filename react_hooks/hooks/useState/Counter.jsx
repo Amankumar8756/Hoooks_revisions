@@ -18,8 +18,7 @@ const Counter = () => {
     }
 
     const decrease =()=>{
-     
-           setCoounter(counter -1);
+ setCoounter(counter -1);
           console.log("counter decrease = ",counter)
     }
 
@@ -40,7 +39,7 @@ const Counter = () => {
        </div>
        <h2>Salary = {salary}</h2>
        <button onClick={()=>setsalary(salary+100/10)}> salary </button>
-       
+
         <p>here present your dayes -- {number}</p>
     </div>
   )
